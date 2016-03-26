@@ -11,7 +11,8 @@ Copyright (C) 2016 David Bollinger (davebollinger at gmail dot com)
 for pure Lua 5.1 (tested against 5.1.5) 3/25/2016
 
 Lua-specific differences in this translation:
--  support for multiple instances
+- support for multiple instances
+- the "class" is merely a "factory" NOT the generator itself
 - init_by_array is 1-based (per Lua idiom)
 - methods to get\set state
 - math library work-alikes
