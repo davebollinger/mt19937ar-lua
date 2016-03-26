@@ -3,16 +3,21 @@ Mersenne Twister RNG for pure Lua 5.1
 
 
 mt19937ar.lua, a conversion of the Jan 26 2002 version of mt19937ar.c
+
 ref:  http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/emt19937ar.html
+
 Copyright (C) 2016 David Bollinger (davebollinger at gmail dot com)
+
 for pure Lua 5.1 (tested against 5.1.5) 3/25/2016
 
 Lua-specific differences in this translation:
-  support for multiple instances
-  init_by_array is 1-based (per Lua idiom)
-  methods to get\set state
-  math library work-alikes
+-  support for multiple instances
+- init_by_array is 1-based (per Lua idiom)
+- methods to get\set state
+- math library work-alikes
+  
 (granted that much of this is superfluous/redundant with the release of Lua 5.3)
+
 Bonus:  successfully passes the validation test :D
 ```
 --example usage (long-form / multiple-instance form):
