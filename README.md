@@ -7,10 +7,14 @@ ref:  http://www.math.sci.hiroshima-u.ac.jp/~m-mat/MT/MT2002/emt19937ar.html
 Copyright (C) 2016 David Bollinger (davebollinger at gmail dot com)
 for pure Lua 5.1 (tested against 5.1.5) 3/25/2016
 
-Lua-specific differences in this translation:  support for multiple instances, init_by_array is 1-based, methods to get\set state, math library work-alikes
-(granted that much of this is superfluous/redundant with the release of Lua 5.3, but I needed the 5.1 support, multiple instances, etc)
+Lua-specific differences in this translation:
+  support for multiple instances
+  init_by_array is 1-based (per Lua idiom)
+  methods to get\set state
+  math library work-alikes
+(granted that much of this is superfluous/redundant with the release of Lua 5.3)
 Bonus:  successfully passes the validation test :D
-
+...
 --example usage (long-form / multiple-instance form):
 mt19937ar = require("mt19937ar")
 mt1 = mt19937ar.new()
@@ -29,3 +33,4 @@ r = mt3:genrand_real2() -- regen from same prior state
 
 --validation usage (short-form / single-instance form)
 require("mt19937ar").new():createValidationOutput()
+...
