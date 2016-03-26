@@ -14,7 +14,7 @@ Lua-specific differences in this translation:
   math library work-alikes
 (granted that much of this is superfluous/redundant with the release of Lua 5.3)
 Bonus:  successfully passes the validation test :D
-...
+```
 --example usage (long-form / multiple-instance form):
 mt19937ar = require("mt19937ar")
 mt1 = mt19937ar.new()
@@ -33,4 +33,4 @@ r = mt3:genrand_real2() -- regen from same prior state
 
 --validation usage (short-form / single-instance form)
 require("mt19937ar").new():createValidationOutput()
-...
+```
