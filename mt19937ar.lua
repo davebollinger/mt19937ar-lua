@@ -320,7 +320,7 @@ function mt19937ar.new()
 				return self:genrand_int32() % m + 1
 			else
 				-- handle two-argument form
-				return m + self:genrand_int32() % (n-m)
+				return m + self:genrand_int32() % (n-m+1)
 			end
 		end
 	end
